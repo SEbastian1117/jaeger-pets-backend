@@ -7,7 +7,7 @@ const PetSchema = Schema({
         unique: true,
     },
     age: {
-        type: String,
+        type: Number,
         required: true
     },
     race: {

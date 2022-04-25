@@ -30,7 +30,7 @@ const createPet = async(req, res = response) => {
 const checkPets = async(req, res = response) => {
     try {
         const myPet = await Pet.find()
-        if(myPet) return res.json({
+        res.json({
             ok: true,
             myPet
         })
@@ -42,7 +42,7 @@ const checkPets = async(req, res = response) => {
         })
     }
 }
-
+// consultar mascota por id
 const checkPet = async(req, res = response) => {
     try {
         const myPet = await Pet.findById(req.params.id)
@@ -56,9 +56,9 @@ const checkPet = async(req, res = response) => {
         })
     } catch (error) {
         console.log(error)
-        res.status(404).json({
+        res.status(500).json({
             ok: false,
-            msg: 'We did not find any pets'
+            msg: 'An error has ocurred, please contact to support'
         })
     }
 }
