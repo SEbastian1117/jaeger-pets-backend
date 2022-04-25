@@ -1,0 +1,188 @@
+{
+    "vets": {
+        "colitas-inquietas": {
+            "info":{
+                "name": "Colitas Inquietas",
+                "dir": "Calle 8 sur No 37 - 15",
+                "open": "12hs",
+                "img": "",
+                "services": {
+                    "spa": {
+                        "corte": {
+                            "price": "20000"
+                        },
+                        "corte-baño": {
+                            "price": "35000"
+                        },
+                        "baño": {
+                            "price": "20000"
+                        }
+                    },
+                    "supplies": {
+                        "dog": {
+                            "food": {
+                                "monello": {
+                                    "price": "9000",
+                                    "img": ""
+                                },
+                                "chunky": {
+                                    "price": "6500",
+                                    "img": ""
+                                },
+                                "dog-chow": {
+                                    "price": "7100",
+                                    "img": ""
+                                }
+                            }
+                        },
+                        "cat": {
+                            "food": {
+                                "monello": {
+                                    "price": "11000",
+                                    "img": ""
+                                },
+                                "oh-mai-god": {
+                                    "price": "5000",
+                                    "img": ""
+                                },
+                                "whiskas": {
+                                    "price": "9350",
+                                    "img": ""
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "yorishi-spa": {
+            "info":{
+                "name": "Yorishi Spa",
+                "dir": "Calle 57b sur # 62 - 92",
+                "open": "12hs",
+                "img": "",
+                "services": {
+                    "spa": {
+                        "corte": {
+                            "price": "15000"
+                        },
+                        "corte-baño": {
+                            "price": "28000"
+                        },
+                        "baño": {
+                            "price": "15000"
+                        },
+                        "baño-antipulgas": {
+                            "price": "40000"
+                        }
+                    },
+                    "supplies": {
+                        "dog": {
+                            "food": {
+                                "monello": {
+                                    "price": "10000",
+                                    "img": ""
+                                },
+                                "chunky": {
+                                    "price": "6300",
+                                    "img": ""
+                                },
+                                "dog-chow": {
+                                    "price": "7300",
+                                    "img": ""
+                                }
+                            }
+                        },
+                        "cat": {
+                            "food": {
+                                "monello": {
+                                    "price": "13000",
+                                    "img": ""
+                                },
+                                "oh-mai-god": {
+                                    "price": "4500",
+                                    "img": ""
+                                },
+                                "whiskas": {
+                                    "price": "9320",
+                                    "img": ""
+                                }
+                            }
+                        }
+                    },
+                    "garden": {
+                        "price": "30000"
+                    }
+                }
+            }
+        },
+        "dr-pascual-pet": {
+            "info": {
+                "name": "Dr Pascual Pet",
+                "dir": "Cra 4 # 56a - 15",
+                "open": "24hs",
+                "img": "",
+                "services": {
+                    "medicines": {
+                        "engistol": "65000",
+                        "cefalexina": "5000",
+                        "desparasitate-dog": "65000",
+                        "desparasitate-cat": "47000",
+                        "kit-parvovirus": "40000",
+                        "nexgard-pulgas": "38000"
+                    },
+                    "clinic": {
+                        "esterilizacion-dog-hembra": "150000",
+                        "esterilizacion-dog-macho": "100000",
+                        "esterilizacion-cat-hembra": "140000",
+                        "esterilizacion-cat-macho": "90000",
+                        "profilaxis": "100000"
+                    },
+                    "inyectologia": {
+                        "vacuna": "50000"
+                    },
+                    "radiologia-e-imagenes": {
+                        "rx": "60000",
+                        "ecografías": "70000",
+                        "tac": "95000",
+                        "tac-color": "104000"
+                    }
+                }
+            }
+        },
+        "pets-emergency": {
+            "info": {
+                "name": "Dr Pascual Pet",
+                "dir": "calle 13 sur # 6 - 75 este",
+                "open": "24hs",
+                "img": "",
+                "services": {
+                    "medicines": {
+                        "engistol": "75000",
+                        "cefalexina": "4500",
+                        "desparasitate-dog": "64000",
+                        "desparasitate-cat": "45000",
+                        "kit-parvovirus": "50000",
+                        "nexgard-pulgas": "48000"
+                    },
+                    "clinic": {
+                        "esterilizacion-dog-hembra": "120000",
+                        "esterilizacion-dog-macho": "80000",
+                        "esterilizacion-cat-hembra": "110000",
+                        "esterilizacion-cat-macho": "90000",
+                        "profilaxis": "120000"
+                    },
+                    "inyectologia": {
+                        "vacuna": "52000"
+                    },
+                    "radiologia-e-imagenes": {
+                        "rx": "50000",
+                        "ecografías": "75000",
+                        "tac": "90000",
+                        "tac-color": "110000"
+                    }
+                }
+            }
+        }
+    }
+}
