@@ -1,5 +1,6 @@
 const Pet = require('./../models/Pet')
 const { response } = require('express')
+const database = require('./../db/vets.json')
 
 //crear nueva mascota
 const createPet = async(req, res = response) => {
@@ -127,11 +128,23 @@ const deletePet = async(req, res = response) => {
         })
     }
 }
+//recibir base de datoi
+const setDatabase = async(req, res = response) => {
+    try {
+        if(database) return await res.status(200).send(database)
+    } catch (error) {
+        console.log(error)
+        res.status(400).json({
+            msg: 'database doesnt exist'
+        })
+    }
+}
 
 module.exports = {
     createPet,
     checkPets,
     checkPet,
     updatePet,
-    deletePet
+    deletePet,
+    setDatabase
 }

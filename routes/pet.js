@@ -1,5 +1,5 @@
 const { Router } = require('express')
-const { createPet, checkPets, checkPet, updatePet, deletePet } = require('./../controllers/pet')
+const { createPet, checkPets, checkPet, updatePet, deletePet, setDatabase } = require('./../controllers/pet')
 const upload = require('./../middlewares/upload')
 const router = Router()
 
@@ -14,6 +14,8 @@ router.get('/new-pet/:id' , checkPet)
 router.put('/update/:id', updatePet)
 
 router.delete('/delete/:id', deletePet)
+
+router.get('/database', setDatabase)
 
 module.exports = router
 
