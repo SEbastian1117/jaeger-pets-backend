@@ -1,6 +1,9 @@
 const { Router } = require('express')
 const { createPet, checkPets, checkPet, updatePet, deletePet } = require('./../controllers/pet')
+const upload = require('./../middlewares/upload')
 const router = Router()
+
+
 
 router.post('/new-pet', createPet)
 

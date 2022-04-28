@@ -3,18 +3,35 @@ const { response } = require('express')
 
 //crear nueva mascota
 const createPet = async(req, res = response) => {
-    const {name} = req.body
+    const url = `${req.protocol}://${req.get('host')}` 
+    const { name, age, race, species, photo, imgUrl } = req.body
     try {
         let myPet = await Pet.findOne( { name } )
         if(myPet) return res.status(400).json({
             ok: false,
-            msg: 'The pet is already exist!'
+            msg: 'The pet is already exist!',
+            myPet
         })
-        myPet = new Pet(req.body)
+        // let imgUrl = null
+        // if(req.file.filename) {
+        //     imgUrl = `${url}/public/${req.file.filename}`
+        // }else{
+        //     imgUrl = null
+        // }
+        
+        myPet = new Pet({
+            name: name,
+            age: age,
+            race: race,
+            species: species,
+            photo: photo,
+            imgUrl: imgUrl
+        })
         await myPet.save()
         res.status(200).json({
             ok: true,
-            msg: 'The pet has been create succesfuly'
+            msg: 'The pet has been create succesfuly',
+            myPet
         })
 
     } catch (error) {
@@ -30,8 +47,7 @@ const createPet = async(req, res = response) => {
 const checkPets = async(req, res = response) => {
     try {
         const myPet = await Pet.find()
-        res.json({
-            ok: true,
+        res.send({
             myPet
         })
     } catch (error) {
